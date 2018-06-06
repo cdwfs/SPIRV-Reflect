@@ -9,6 +9,26 @@ import os.path
 import shutil
 import subprocess
 import sys
+import tempfile
+
+def unix2dos(path):
+  """Quick & dirty py2+3-compatible unix2dos. Assumes the input uses unix line endings."""
+  fin = open(path, mode="r")
+  if sys.version_info.major == 2:
+    ftemp = tempfile.TemporaryFile(mode="w+b")
+    ftemp.write(fin.read().replace("\n", "\r\n"))
+  else:
+    ftemp = tempfile.TemporaryFile(mode="w+", newline="\r\n")
+    ftemp.write(fin.read())
+  fin.close()
+  ftemp.seek(0)
+  if sys.version_info.major == 2:
+    fout = open(path, mode="wb")
+  else:
+    fout = open(path, mode="w")
+  fout.write(ftemp.read())
+  ftemp.close()
+  fout.close()
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description="Generate golden YAML from test shader .spv files")
@@ -48,8 +68,10 @@ reflection code or the test shaders.
       yaml_cmd_args = [spirv_reflect_exe, "-y", "-v", "1", spv_path]
       if args.verbose:
         print(" ".join(yaml_cmd_args))
-      subprocess.call(yaml_cmd_args, stdout=file(yaml_path, "w"))
+      subprocess.call(yaml_cmd_args, stdout=open(yaml_path, "w"))
       print("%s -> %s" % (spv_path, yaml_path))
+      if os.name == "posix":
+        unix2dos(yaml_path)
     except NameError:
       print("spirv-reflect application not found; did you build it first?")
       sys.exit()

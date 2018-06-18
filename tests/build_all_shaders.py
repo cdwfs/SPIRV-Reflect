@@ -29,8 +29,10 @@ shaders = [
   {'source':"hlsl/binding_array.hlsl", 'entry':"main", 'profile':'ps_6_0', 'stage':'frag'},
   {'source':"hlsl/binding_types.hlsl", 'entry':"main", 'profile':'ps_6_0', 'stage':'frag'},
   {'source':"hlsl/cbuffer.hlsl", 'entry':"main", 'profile':'vs_6_0', 'stage':'vert'},
+  {'source':"hlsl/constantbuffer.hlsl", 'entry':"main", 'profile':'vs_6_0', 'stage':'vert'},
   {'source':"hlsl/counter_buffers.hlsl", 'entry':"main", 'profile':'ps_6_0', 'stage':'frag'},
   {'source':"hlsl/semantics.hlsl", 'entry':"main", 'profile':'ps_6_0', 'stage':'frag'},
+  {'source':"hlsl/structuredbuffer.hlsl", 'entry':"main", 'profile':'ps_6_0', 'stage':'frag'},
 ]
 
 if __name__ == "__main__":
@@ -60,4 +62,4 @@ if __name__ == "__main__":
       compile_cmd_output = subprocess.check_output(compile_cmd_args, stderr = subprocess.STDOUT)
       print("%s -> %s" % (src_path, spv_path))
     except subprocess.CalledProcessError as error:
-      print("Compilation failed with error code %d:\n%s" % (error.returncode, error.output.decode('utf-8')))
+      print("Compilation of %s failed with error code %d:\n%s" % (src_path, error.returncode, error.output.decode('utf-8')))

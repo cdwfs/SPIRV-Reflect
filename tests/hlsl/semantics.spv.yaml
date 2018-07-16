@@ -270,7 +270,7 @@ all_descriptor_bindings:
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td4
-    word_offset: { binding: 536, set: 532 }
+    word_offset: { binding: 529, set: 525 }
 all_interface_variables:
   - &iv0
     spirv_id: 18
@@ -307,13 +307,13 @@ all_interface_variables:
     members:
     format: 106 # VK_FORMAT_R32G32B32_SFLOAT
     type_description: *td6
-    word_offset: { location: 472 }
+    word_offset: { location: 465 }
   - &iv2
     spirv_id: 23
     name: "in.var.COLOR_1"
     location: 1
     storage_class: 1 # Input
-    semantic: "COLOR_1"
+    semantic: "COLOR_00001"
     decoration_flags: 0x00000000 # NONE
     built_in: -1 # ???
     numeric:
@@ -325,7 +325,7 @@ all_interface_variables:
     members:
     format: 106 # VK_FORMAT_R32G32B32_SFLOAT
     type_description: *td6
-    word_offset: { location: 476 }
+    word_offset: { location: 469 }
   - &iv3
     spirv_id: 26
     name: "in.var.OPACITY_512"
@@ -343,7 +343,7 @@ all_interface_variables:
     members:
     format: 100 # VK_FORMAT_R32_SFLOAT
     type_description: *td7
-    word_offset: { location: 480 }
+    word_offset: { location: 473 }
   - &iv4
     spirv_id: 28
     name: "in.var.SCALE_987654321"
@@ -361,7 +361,7 @@ all_interface_variables:
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
     type_description: *td5
-    word_offset: { location: 484 }
+    word_offset: { location: 477 }
   - &iv5
     spirv_id: 31
     name: "in.var.TEXCOORD0"
@@ -379,7 +379,7 @@ all_interface_variables:
     members:
     format: 103 # VK_FORMAT_R32G32_SFLOAT
     type_description: *td8
-    word_offset: { location: 488 }
+    word_offset: { location: 481 }
   - &iv6
     spirv_id: 33
     name: "in.var.TEXCOORD1"
@@ -397,7 +397,7 @@ all_interface_variables:
     members:
     format: 103 # VK_FORMAT_R32G32_SFLOAT
     type_description: *td8
-    word_offset: { location: 492 }
+    word_offset: { location: 485 }
   - &iv7
     spirv_id: 35
     name: "in.var.TEXCOORD2"
@@ -415,7 +415,7 @@ all_interface_variables:
     members:
     format: 103 # VK_FORMAT_R32G32_SFLOAT
     type_description: *td8
-    word_offset: { location: 496 }
+    word_offset: { location: 489 }
   - &iv8
     spirv_id: 42
     name: 
@@ -451,7 +451,7 @@ all_interface_variables:
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
     type_description: *td5
-    word_offset: { location: 500 }
+    word_offset: { location: 493 }
   - &iv10
     spirv_id: 50
     name: "out.var.SV_TARGET1"
@@ -469,7 +469,7 @@ all_interface_variables:
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
     type_description: *td5
-    word_offset: { location: 504 }
+    word_offset: { location: 497 }
   - &iv11
     spirv_id: 52
     name: "out.var.SV_TARGET2"
@@ -487,7 +487,7 @@ all_interface_variables:
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
     type_description: *td5
-    word_offset: { location: 508 }
+    word_offset: { location: 501 }
   - &iv12
     spirv_id: 54
     name: "out.var.SV_TARGET3"
@@ -505,7 +505,7 @@ all_interface_variables:
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
     type_description: *td5
-    word_offset: { location: 512 }
+    word_offset: { location: 505 }
   - &iv13
     spirv_id: 56
     name: "out.var.SV_TARGET4"
@@ -523,7 +523,7 @@ all_interface_variables:
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
     type_description: *td5
-    word_offset: { location: 516 }
+    word_offset: { location: 509 }
   - &iv14
     spirv_id: 58
     name: "out.var.SV_TARGET5"
@@ -541,7 +541,7 @@ all_interface_variables:
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
     type_description: *td5
-    word_offset: { location: 520 }
+    word_offset: { location: 513 }
   - &iv15
     spirv_id: 60
     name: "out.var.SV_TARGET6"
@@ -559,7 +559,7 @@ all_interface_variables:
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
     type_description: *td5
-    word_offset: { location: 524 }
+    word_offset: { location: 517 }
   - &iv16
     spirv_id: 62
     name: "out.var.SV_TARGET7"
@@ -577,7 +577,7 @@ all_interface_variables:
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
     type_description: *td5
-    word_offset: { location: 528 }
+    word_offset: { location: 521 }
 module:
   generator: 14 # Google spiregg
   entry_point_name: "main"

@@ -49,7 +49,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 0, depth: 0, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=1D image_format=Unknown
+      image: { dim: 0, depth: 2, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=1D image_format=Unknown
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -66,7 +66,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 1, depth: 0, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
+      image: { dim: 1, depth: 2, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -83,7 +83,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 2, depth: 0, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=3D image_format=Unknown
+      image: { dim: 2, depth: 2, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=3D image_format=Unknown
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -100,7 +100,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 0, depth: 0, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=1D image_format=Unknown
+      image: { dim: 0, depth: 2, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=1D image_format=Unknown
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -117,7 +117,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 1, depth: 0, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
+      image: { dim: 1, depth: 2, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -134,7 +134,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 0, depth: 0, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=1D image_format=Rgba32f
+      image: { dim: 0, depth: 2, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=1D image_format=Rgba32f
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -151,7 +151,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 1, depth: 0, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=2D image_format=Rgba32f
+      image: { dim: 1, depth: 2, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=2D image_format=Rgba32f
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -168,7 +168,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 2, depth: 0, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=3D image_format=Rgba32f
+      image: { dim: 2, depth: 2, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=3D image_format=Rgba32f
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -185,7 +185,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 0, depth: 0, arrayed: 1, ms: 0, sampled: 2, image_format: 1 } # dim=1D image_format=Rgba32f
+      image: { dim: 0, depth: 2, arrayed: 1, ms: 0, sampled: 2, image_format: 1 } # dim=1D image_format=Rgba32f
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -202,7 +202,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 1, depth: 0, arrayed: 1, ms: 0, sampled: 2, image_format: 1 } # dim=2D image_format=Rgba32f
+      image: { dim: 1, depth: 2, arrayed: 1, ms: 0, sampled: 2, image_format: 1 } # dim=2D image_format=Rgba32f
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -219,7 +219,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 1, depth: 0, arrayed: 0, ms: 1, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
+      image: { dim: 1, depth: 2, arrayed: 0, ms: 1, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -236,7 +236,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 1, depth: 0, arrayed: 1, ms: 1, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
+      image: { dim: 1, depth: 2, arrayed: 1, ms: 1, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -253,7 +253,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 3, depth: 0, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=Cube image_format=Unknown
+      image: { dim: 3, depth: 2, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=Cube image_format=Unknown
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -270,7 +270,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 3, depth: 0, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=Cube image_format=Unknown
+      image: { dim: 3, depth: 2, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=Cube image_format=Unknown
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -357,7 +357,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 5, depth: 0, arrayed: 0, ms: 0, sampled: 1, image_format: 1 } # dim=Buffer image_format=Rgba32f
+      image: { dim: 5, depth: 2, arrayed: 0, ms: 0, sampled: 1, image_format: 1 } # dim=Buffer image_format=Rgba32f
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -374,7 +374,7 @@ all_type_descriptions:
         scalar: { width: 0, signedness: 0 }
         vector: { component_count: 0 }
         matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 5, depth: 0, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=Buffer image_format=Rgba32f
+      image: { dim: 5, depth: 2, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=Buffer image_format=Rgba32f
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
@@ -554,23 +554,6 @@ all_type_descriptions:
     members:
       - *td30
   - &td32
-    id: 1
-    op: 22
-    type_name: 
-    struct_member_name: 
-    storage_class: -1 # NOT APPLICABLE
-    type_flags: 0x00000008 # FLOAT 
-    decoration_flags: 0x00000000 # NONE
-    traits:
-      numeric:
-        scalar: { width: 32, signedness: 0 }
-        vector: { component_count: 0 }
-        matrix: { column_count: 0, row_count: 0, stride: 0 }
-      image: { dim: 0, depth: 0, arrayed: 0, ms: 0, sampled: 0, image_format: 0 } # dim=1D image_format=Unknown
-      array: { dims_count: 0, dims: [], stride: 0 }
-    member_count: 0
-    members:
-  - &td33
     id: 51
     op: 23
     type_name: 
@@ -865,7 +848,7 @@ all_block_variables:
     offset: 0
     absolute_offset: 0
     size: 4
-    padded_size: 16
+    padded_size: 4
     decorations: 0x00000080 # NON_WRITABLE 
     numeric:
       scalar: { width: 32, signedness: 0 }
@@ -879,8 +862,8 @@ all_block_variables:
     name: "MyTBuffer"
     offset: 0
     absolute_offset: 0
-    size: 16
-    padded_size: 16
+    size: 0
+    padded_size: 0
     decorations: 0x00000080 # NON_WRITABLE 
     numeric:
       scalar: { width: 0, signedness: 0 }
@@ -910,8 +893,8 @@ all_block_variables:
     name: "MyTextureBuffer"
     offset: 0
     absolute_offset: 0
-    size: 16
-    padded_size: 16
+    size: 0
+    padded_size: 0
     decorations: 0x00000080 # NON_WRITABLE 
     numeric:
       scalar: { width: 0, signedness: 0 }
@@ -1019,7 +1002,7 @@ all_block_variables:
     offset: 0
     absolute_offset: 0
     size: 4
-    padded_size: 16
+    padded_size: 4
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 32, signedness: 1 }
@@ -1033,8 +1016,8 @@ all_block_variables:
     name: "counter.var.MyRWStructuredBuffer"
     offset: 0
     absolute_offset: 0
-    size: 16
-    padded_size: 16
+    size: 0
+    padded_size: 0
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 0, signedness: 0 }
@@ -1081,7 +1064,7 @@ all_block_variables:
     offset: 0
     absolute_offset: 0
     size: 4
-    padded_size: 16
+    padded_size: 4
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 32, signedness: 1 }
@@ -1095,8 +1078,8 @@ all_block_variables:
     name: "counter.var.MyAppendStructuredBuffer"
     offset: 0
     absolute_offset: 0
-    size: 16
-    padded_size: 16
+    size: 0
+    padded_size: 0
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 0, signedness: 0 }
@@ -1143,7 +1126,7 @@ all_block_variables:
     offset: 0
     absolute_offset: 0
     size: 4
-    padded_size: 16
+    padded_size: 4
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 32, signedness: 1 }
@@ -1157,8 +1140,8 @@ all_block_variables:
     name: "counter.var.MyConsumeStructuredBuffer"
     offset: 0
     absolute_offset: 0
-    size: 16
-    padded_size: 16
+    size: 0
+    padded_size: 0
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 0, signedness: 0 }
@@ -1246,7 +1229,7 @@ all_descriptor_bindings:
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td1
-    word_offset: { binding: 589, set: 585 }
+    word_offset: { binding: 581, set: 577 }
   - &db1
     spirv_id: 5
     name: "MyConstantBuffer"
@@ -1261,7 +1244,7 @@ all_descriptor_bindings:
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td1
-    word_offset: { binding: 597, set: 593 }
+    word_offset: { binding: 589, set: 585 }
   - &db2
     spirv_id: 8
     name: "MyTexture1D"
@@ -1270,13 +1253,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 2 # VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE
     resource_type: 4 # SRV
-    image: { dim: 0, depth: 0, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=1D image_format=Unknown
+    image: { dim: 0, depth: 2, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=1D image_format=Unknown
     block: *bv4 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td2
-    word_offset: { binding: 605, set: 601 }
+    word_offset: { binding: 597, set: 593 }
   - &db3
     spirv_id: 11
     name: "MyTexture2D"
@@ -1285,13 +1268,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 2 # VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE
     resource_type: 4 # SRV
-    image: { dim: 1, depth: 0, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
+    image: { dim: 1, depth: 2, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
     block: *bv5 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td3
-    word_offset: { binding: 613, set: 609 }
+    word_offset: { binding: 605, set: 601 }
   - &db4
     spirv_id: 14
     name: "MyTexture3D"
@@ -1300,13 +1283,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 2 # VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE
     resource_type: 4 # SRV
-    image: { dim: 2, depth: 0, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=3D image_format=Unknown
+    image: { dim: 2, depth: 2, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=3D image_format=Unknown
     block: *bv6 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td4
-    word_offset: { binding: 621, set: 617 }
+    word_offset: { binding: 613, set: 609 }
   - &db5
     spirv_id: 17
     name: "MyTexture1DArray"
@@ -1315,13 +1298,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 2 # VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE
     resource_type: 4 # SRV
-    image: { dim: 0, depth: 0, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=1D image_format=Unknown
+    image: { dim: 0, depth: 2, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=1D image_format=Unknown
     block: *bv7 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td5
-    word_offset: { binding: 629, set: 625 }
+    word_offset: { binding: 621, set: 617 }
   - &db6
     spirv_id: 20
     name: "MyTexture2DArray"
@@ -1330,13 +1313,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 2 # VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE
     resource_type: 4 # SRV
-    image: { dim: 1, depth: 0, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
+    image: { dim: 1, depth: 2, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
     block: *bv8 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td6
-    word_offset: { binding: 637, set: 633 }
+    word_offset: { binding: 629, set: 625 }
   - &db7
     spirv_id: 23
     name: "MyRWTexture1D"
@@ -1345,13 +1328,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 3 # VK_DESCRIPTOR_TYPE_STORAGE_IMAGE
     resource_type: 8 # UAV
-    image: { dim: 0, depth: 0, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=1D image_format=Rgba32f
+    image: { dim: 0, depth: 2, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=1D image_format=Rgba32f
     block: *bv9 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td7
-    word_offset: { binding: 645, set: 641 }
+    word_offset: { binding: 637, set: 633 }
   - &db8
     spirv_id: 26
     name: "MyRWTexture2D"
@@ -1360,13 +1343,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 3 # VK_DESCRIPTOR_TYPE_STORAGE_IMAGE
     resource_type: 8 # UAV
-    image: { dim: 1, depth: 0, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=2D image_format=Rgba32f
+    image: { dim: 1, depth: 2, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=2D image_format=Rgba32f
     block: *bv10 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td8
-    word_offset: { binding: 653, set: 649 }
+    word_offset: { binding: 645, set: 641 }
   - &db9
     spirv_id: 29
     name: "MyRWTexture3D"
@@ -1375,13 +1358,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 3 # VK_DESCRIPTOR_TYPE_STORAGE_IMAGE
     resource_type: 8 # UAV
-    image: { dim: 2, depth: 0, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=3D image_format=Rgba32f
+    image: { dim: 2, depth: 2, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=3D image_format=Rgba32f
     block: *bv11 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td9
-    word_offset: { binding: 661, set: 657 }
+    word_offset: { binding: 653, set: 649 }
   - &db10
     spirv_id: 32
     name: "MyRWTexture1DArray"
@@ -1390,13 +1373,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 3 # VK_DESCRIPTOR_TYPE_STORAGE_IMAGE
     resource_type: 8 # UAV
-    image: { dim: 0, depth: 0, arrayed: 1, ms: 0, sampled: 2, image_format: 1 } # dim=1D image_format=Rgba32f
+    image: { dim: 0, depth: 2, arrayed: 1, ms: 0, sampled: 2, image_format: 1 } # dim=1D image_format=Rgba32f
     block: *bv12 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td10
-    word_offset: { binding: 669, set: 665 }
+    word_offset: { binding: 661, set: 657 }
   - &db11
     spirv_id: 35
     name: "MyRWTexture2DArray"
@@ -1405,13 +1388,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 3 # VK_DESCRIPTOR_TYPE_STORAGE_IMAGE
     resource_type: 8 # UAV
-    image: { dim: 1, depth: 0, arrayed: 1, ms: 0, sampled: 2, image_format: 1 } # dim=2D image_format=Rgba32f
+    image: { dim: 1, depth: 2, arrayed: 1, ms: 0, sampled: 2, image_format: 1 } # dim=2D image_format=Rgba32f
     block: *bv13 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td11
-    word_offset: { binding: 677, set: 673 }
+    word_offset: { binding: 669, set: 665 }
   - &db12
     spirv_id: 38
     name: "MyTexture2DMS"
@@ -1420,13 +1403,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 2 # VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE
     resource_type: 4 # SRV
-    image: { dim: 1, depth: 0, arrayed: 0, ms: 1, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
+    image: { dim: 1, depth: 2, arrayed: 0, ms: 1, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
     block: *bv14 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td12
-    word_offset: { binding: 685, set: 681 }
+    word_offset: { binding: 677, set: 673 }
   - &db13
     spirv_id: 41
     name: "MyTexture2DMSArray"
@@ -1435,13 +1418,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 2 # VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE
     resource_type: 4 # SRV
-    image: { dim: 1, depth: 0, arrayed: 1, ms: 1, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
+    image: { dim: 1, depth: 2, arrayed: 1, ms: 1, sampled: 1, image_format: 0 } # dim=2D image_format=Unknown
     block: *bv15 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td13
-    word_offset: { binding: 693, set: 689 }
+    word_offset: { binding: 685, set: 681 }
   - &db14
     spirv_id: 44
     name: "MyTextureCube"
@@ -1450,13 +1433,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 2 # VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE
     resource_type: 4 # SRV
-    image: { dim: 3, depth: 0, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=Cube image_format=Unknown
+    image: { dim: 3, depth: 2, arrayed: 0, ms: 0, sampled: 1, image_format: 0 } # dim=Cube image_format=Unknown
     block: *bv16 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td14
-    word_offset: { binding: 701, set: 697 }
+    word_offset: { binding: 693, set: 689 }
   - &db15
     spirv_id: 47
     name: "MyTextureCubeArray"
@@ -1465,13 +1448,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 2 # VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE
     resource_type: 4 # SRV
-    image: { dim: 3, depth: 0, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=Cube image_format=Unknown
+    image: { dim: 3, depth: 2, arrayed: 1, ms: 0, sampled: 1, image_format: 0 } # dim=Cube image_format=Unknown
     block: *bv17 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td15
-    word_offset: { binding: 709, set: 705 }
+    word_offset: { binding: 701, set: 697 }
   - &db16
     spirv_id: 50
     name: "MyTBuffer"
@@ -1486,7 +1469,7 @@ all_descriptor_bindings:
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td17
-    word_offset: { binding: 717, set: 713 }
+    word_offset: { binding: 709, set: 705 }
   - &db17
     spirv_id: 54
     name: "MyTextureBuffer"
@@ -1501,7 +1484,7 @@ all_descriptor_bindings:
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td19
-    word_offset: { binding: 725, set: 721 }
+    word_offset: { binding: 717, set: 713 }
   - &db18
     spirv_id: 57
     name: "MyBuffer"
@@ -1510,13 +1493,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 4 # VK_DESCRIPTOR_TYPE_UNIFORM_TEXEL_BUFFER
     resource_type: 4 # SRV
-    image: { dim: 5, depth: 0, arrayed: 0, ms: 0, sampled: 1, image_format: 1 } # dim=Buffer image_format=Rgba32f
+    image: { dim: 5, depth: 2, arrayed: 0, ms: 0, sampled: 1, image_format: 1 } # dim=Buffer image_format=Rgba32f
     block: *bv22 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td20
-    word_offset: { binding: 733, set: 729 }
+    word_offset: { binding: 725, set: 721 }
   - &db19
     spirv_id: 60
     name: "MyRWBuffer"
@@ -1525,13 +1508,13 @@ all_descriptor_bindings:
     set: 0
     descriptor_type: 5 # VK_DESCRIPTOR_TYPE_STORAGE_TEXEL_BUFFER
     resource_type: 8 # UAV
-    image: { dim: 5, depth: 0, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=Buffer image_format=Rgba32f
+    image: { dim: 5, depth: 2, arrayed: 0, ms: 0, sampled: 2, image_format: 1 } # dim=Buffer image_format=Rgba32f
     block: *bv23 # 
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td21
-    word_offset: { binding: 741, set: 737 }
+    word_offset: { binding: 733, set: 729 }
   - &db20
     spirv_id: 64
     name: "MyStructuredBuffer"
@@ -1546,7 +1529,7 @@ all_descriptor_bindings:
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td23
-    word_offset: { binding: 749, set: 745 }
+    word_offset: { binding: 741, set: 737 }
   - &db21
     spirv_id: 71
     name: "counter.var.MyRWStructuredBuffer"
@@ -1561,7 +1544,7 @@ all_descriptor_bindings:
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td27
-    word_offset: { binding: 765, set: 761 }
+    word_offset: { binding: 757, set: 753 }
   - &db22
     spirv_id: 67
     name: "MyRWStructuredBuffer"
@@ -1576,7 +1559,7 @@ all_descriptor_bindings:
     uav_counter_id: 71
     uav_counter_binding: *db21 # "counter.var.MyRWStructuredBuffer"
     type_description: *td25
-    word_offset: { binding: 757, set: 753 }
+    word_offset: { binding: 749, set: 745 }
   - *db21
   - &db23
     spirv_id: 73
@@ -1592,7 +1575,7 @@ all_descriptor_bindings:
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td27
-    word_offset: { binding: 781, set: 777 }
+    word_offset: { binding: 773, set: 769 }
   - &db24
     spirv_id: 72
     name: "MyAppendStructuredBuffer"
@@ -1607,7 +1590,7 @@ all_descriptor_bindings:
     uav_counter_id: 73
     uav_counter_binding: *db23 # "counter.var.MyAppendStructuredBuffer"
     type_description: *td25
-    word_offset: { binding: 773, set: 769 }
+    word_offset: { binding: 765, set: 761 }
   - *db23
   - &db25
     spirv_id: 75
@@ -1623,7 +1606,7 @@ all_descriptor_bindings:
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td27
-    word_offset: { binding: 797, set: 793 }
+    word_offset: { binding: 789, set: 785 }
   - &db26
     spirv_id: 74
     name: "MyConsumeStructuredBuffer"
@@ -1638,7 +1621,7 @@ all_descriptor_bindings:
     uav_counter_id: 75
     uav_counter_binding: *db25 # "counter.var.MyConsumeStructuredBuffer"
     type_description: *td25
-    word_offset: { binding: 789, set: 785 }
+    word_offset: { binding: 781, set: 777 }
   - *db25
   - &db27
     spirv_id: 80
@@ -1654,7 +1637,7 @@ all_descriptor_bindings:
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td29
-    word_offset: { binding: 805, set: 801 }
+    word_offset: { binding: 797, set: 793 }
   - &db28
     spirv_id: 83
     name: "MyRWByteAddressBuffer"
@@ -1669,7 +1652,7 @@ all_descriptor_bindings:
     uav_counter_id: 4294967295
     uav_counter_binding:
     type_description: *td31
-    word_offset: { binding: 813, set: 809 }
+    word_offset: { binding: 805, set: 801 }
 all_interface_variables:
   - &iv0
     spirv_id: 92
@@ -1681,12 +1664,12 @@ all_interface_variables:
     built_in: 15 # FragCoord
     numeric:
       scalar: { width: 32, signedness: 0 }
-      vector: { component_count: 0 }
+      vector: { component_count: 4 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
-    format: 100 # VK_FORMAT_R32_SFLOAT
+    format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
     type_description: *td32
     word_offset: { location: 0 }
   - &iv1
@@ -1705,8 +1688,8 @@ all_interface_variables:
     member_count: 0
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
-    type_description: *td33
-    word_offset: { location: 581 }
+    type_description: *td32
+    word_offset: { location: 573 }
 module:
   generator: 14 # Google spiregg
   entry_point_name: "main"

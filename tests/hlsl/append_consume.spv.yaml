@@ -55,6 +55,23 @@ all_type_descriptions:
     members:
       - *td1
   - &td3
+    id: 1
+    op: 21
+    type_name: 
+    struct_member_name: "rgba"
+    storage_class: 0 # UniformConstant
+    type_flags: 0x00000004 # INT 
+    decoration_flags: 0x00000000 # NONE
+    traits:
+      numeric:
+        scalar: { width: 32, signedness: 0 }
+        vector: { component_count: 0 }
+        matrix: { column_count: 0, row_count: 0, stride: 0 }
+      image: { dim: 0, depth: 0, arrayed: 0, ms: 0, sampled: 0, image_format: 0 } # dim=1D image_format=Unknown
+      array: { dims_count: 0, dims: [], stride: 0 }
+    member_count: 0
+    members:
+  - &td4
     id: 7
     op: 21
     type_name: 
@@ -71,7 +88,7 @@ all_type_descriptions:
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
-  - &td4
+  - &td5
     id: 8
     op: 30
     type_name: "type.ACSBuffer.counter"
@@ -88,8 +105,8 @@ all_type_descriptions:
       array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 1
     members:
-      - *td3
-  - &td5
+      - *td4
+  - &td6
     id: 19
     op: 23
     type_name: 
@@ -111,8 +128,8 @@ all_block_variables:
     name: "rgba"
     offset: 0
     absolute_offset: 0
-    size: 0
-    padded_size: 0
+    size: 4
+    padded_size: 4
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 32, signedness: 0 }
@@ -121,13 +138,13 @@ all_block_variables:
     array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
-    type_description: *td0
+    type_description: *td3
   - &bv1
     name: 
     offset: 0
     absolute_offset: 0
-    size: 0
-    padded_size: 0
+    size: 4
+    padded_size: 4
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 0, signedness: 0 }
@@ -159,7 +176,7 @@ all_block_variables:
     offset: 0
     absolute_offset: 0
     size: 4
-    padded_size: 16
+    padded_size: 4
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 32, signedness: 1 }
@@ -168,13 +185,13 @@ all_block_variables:
     array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
-    type_description: *td3
+    type_description: *td4
   - &bv4
     name: "counter.var.BufferOut"
     offset: 0
     absolute_offset: 0
-    size: 16
-    padded_size: 16
+    size: 0
+    padded_size: 0
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 0, signedness: 0 }
@@ -184,13 +201,13 @@ all_block_variables:
     member_count: 1
     members:
       - *bv3
-    type_description: *td4
+    type_description: *td5
   - &bv5
     name: 
     offset: 0
     absolute_offset: 0
     size: 4
-    padded_size: 16
+    padded_size: 4
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 32, signedness: 1 }
@@ -199,13 +216,13 @@ all_block_variables:
     array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
-    type_description: *td3
+    type_description: *td4
   - &bv6
     name: "counter.var.BufferIn"
     offset: 0
     absolute_offset: 0
-    size: 16
-    padded_size: 16
+    size: 0
+    padded_size: 0
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 0, signedness: 0 }
@@ -215,13 +232,13 @@ all_block_variables:
     member_count: 1
     members:
       - *bv5
-    type_description: *td4
+    type_description: *td5
   - &bv7
     name: "rgba"
     offset: 0
     absolute_offset: 0
-    size: 0
-    padded_size: 0
+    size: 4
+    padded_size: 4
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 32, signedness: 0 }
@@ -230,13 +247,13 @@ all_block_variables:
     array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
-    type_description: *td0
+    type_description: *td3
   - &bv8
     name: 
     offset: 0
     absolute_offset: 0
-    size: 0
-    padded_size: 0
+    size: 4
+    padded_size: 4
     decorations: 0x00000000 # NONE
     numeric:
       scalar: { width: 0, signedness: 0 }
@@ -277,8 +294,8 @@ all_descriptor_bindings:
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
-    type_description: *td4
-    word_offset: { binding: 214, set: 210 }
+    type_description: *td5
+    word_offset: { binding: 206, set: 202 }
   - &db1
     spirv_id: 6
     name: "BufferIn"
@@ -293,7 +310,7 @@ all_descriptor_bindings:
     uav_counter_id: 10
     uav_counter_binding: *db0 # "counter.var.BufferIn"
     type_description: *td2
-    word_offset: { binding: 198, set: 194 }
+    word_offset: { binding: 190, set: 186 }
   - &db2
     spirv_id: 12
     name: "counter.var.BufferOut"
@@ -307,8 +324,8 @@ all_descriptor_bindings:
     array: { dims_count: 0, dims: [] }
     uav_counter_id: 4294967295
     uav_counter_binding:
-    type_description: *td4
-    word_offset: { binding: 222, set: 218 }
+    type_description: *td5
+    word_offset: { binding: 214, set: 210 }
   - *db0
   - &db3
     spirv_id: 11
@@ -324,7 +341,7 @@ all_descriptor_bindings:
     uav_counter_id: 12
     uav_counter_binding: *db2 # "counter.var.BufferOut"
     type_description: *td2
-    word_offset: { binding: 206, set: 202 }
+    word_offset: { binding: 198, set: 194 }
 all_interface_variables:
   - &iv0
     spirv_id: 23
@@ -342,7 +359,7 @@ all_interface_variables:
     member_count: 0
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
-    type_description: *td5
+    type_description: *td6
     word_offset: { location: 0 }
   - &iv1
     spirv_id: 27
@@ -360,8 +377,8 @@ all_interface_variables:
     member_count: 0
     members:
     format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
-    type_description: *td5
-    word_offset: { location: 190 }
+    type_description: *td6
+    word_offset: { location: 182 }
 module:
   generator: 14 # Google spiregg
   entry_point_name: "main"
